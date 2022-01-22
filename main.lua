@@ -81,6 +81,8 @@ require "task_function_key"
 require "task_onenet"
 require "task_led"
 
+require "powerKey"
+powerKey.setup(3000, function() rtos.poweroff() end)
 
 -- 启动系统框架
 sys.init(0, 0)

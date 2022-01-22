@@ -41,4 +41,4 @@ end
 
 
 -- screen_key配置为中断，可通过getfunction_keyFnc()获取输入电平，产生中断时，自动执行screen_keyIntFnc函数
-getfunction_keyFnc = pins.setup(function_key, function_keyIntFnc)
+getfunction_keyFnc = pins.setup(function_key, function_keyIntFnc, pio.PULLUP)

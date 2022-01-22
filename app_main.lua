@@ -25,10 +25,10 @@ require "pins"
 -- require "mutils"
 module(..., package.seeall)
 
-_G.DeviceName = "al00014g0001"
+_G.DeviceName = "al00014g0002"
 _G.ProductId = "4LwKzUwOpX"
 _G.token =
-    "version=2018-10-31&res=products%2F4LwKzUwOpX%2Fdevices%2Fal00014g0001&et=4083930061&method=md5&sign=qoJjEmMkydIfIGD9oHXr3w%3D%3D"
+    "version=2018-10-31&res=products%2F4LwKzUwOpX%2Fdevices%2Fal00014g0002&et=4100731932&method=md5&sign=PiCcUlaoROhzndmn9jgY8A%3D%3D"
 _G.LCD_STATE = true -- 屏幕亮暗状态
 _G.REC_STATE = false -- 记录状态
 _G.temp = 12.54 -- 默认温度

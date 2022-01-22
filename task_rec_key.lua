@@ -90,4 +90,4 @@ function rec_keyIntFnc(msg)
 end
 
 -- rec_key配置为中断，可通过getrec_keyFnc()获取输入电平，产生中断时，自动执行rec_keyIntFnc函数
-getrec_keyFnc = pins.setup(rec_key, rec_keyIntFnc)
+getrec_keyFnc = pins.setup(rec_key, rec_keyIntFnc, pio.PULLUP)

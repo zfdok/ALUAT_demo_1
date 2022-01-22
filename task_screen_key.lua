@@ -124,4 +124,4 @@ function screen_keyIntFnc(msg)
 end
 
 -- screen_key配置为中断，可通过getscreen_keyFnc()获取输入电平，产生中断时，自动执行screen_keyIntFnc函数
-getscreen_keyFnc = pins.setup(screen_key, screen_keyIntFnc)
+getscreen_keyFnc = pins.setup(screen_key, screen_keyIntFnc, pio.PULLUP)

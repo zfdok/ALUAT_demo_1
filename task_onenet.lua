@@ -220,6 +220,7 @@ local function onenet_iot()
             while true do
                 log.warn("-##########- 死循环 --###############--")
                 if not _G.REC_STATE then
+                    onenet_mqttClient:disconnect()
                     log.warn("**********打破内部记录循环**********")
                     break
                 end
